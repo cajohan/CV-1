@@ -15,7 +15,7 @@
 }
 
 #demo {
-  word-break: break-all;
+  word-break: break-all; //CSS自动换行
 }
 
 #div1 {
@@ -48,7 +48,7 @@
   }
 
   #div1 {
-    padding: relative;
+    position: relative;
     top: 0;
     right: 0;
   }
