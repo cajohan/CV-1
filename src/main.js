@@ -63,11 +63,13 @@ let step = () => {
     //demo.innerHTML = string.substring(0, n);
     html.innerHTML = string2;
     style.innerHTML = string.substring(0, n);
+    window.scrollTo(0, 99999);
+    html.scrollTo(0, 99999);
     if (n < string.length - 1) {
       n += 1;
       step();
     }
-  }, 0);
+  }, 50);
 };
 
 step();

@@ -137,12 +137,14 @@ var step = function step() {
 
     html.innerHTML = string2;
     style.innerHTML = string.substring(0, n);
+    window.scrollTo(0, 99999);
+    html.scrollTo(0, 99999);
 
     if (n < string.length - 1) {
       n += 1;
       step();
     }
-  }, 0);
+  }, 50);
 };
 
 step();
@@ -174,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "10245" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2415" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
